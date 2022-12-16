@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_arkaplan"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/customer_button"
+        android:layout_width="148dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="232dp"
+        android:text="@string/customer"
+        android:textColor="#330202"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:iconTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/waiter_button"
+        android:layout_width="148dp"
+        android:layout_height="88dp"
+        android:text="@string/waiter"
+        android:textColor="#4C1515"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_button"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <Button
+        android:id="@+id/evesiparisgiris_b"
+        android:layout_width="148dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="232dp"
+        android:text="Eve Siparis"
+        android:textColor="#330202"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:iconTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kuryegiris"
+        android:layout_width="148dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="44dp"
+        android:text="Kurye"
+        android:textColor="#4C1515"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="@color/material_on_primary_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evesiparisgiris_b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

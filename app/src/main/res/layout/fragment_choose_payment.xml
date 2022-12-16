@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomepage"
+    tools:context=".ChoosePaymentFragment">
+
+
+    <TextView
+        android:id="@+id/final_payment_amount"
+        android:layout_width="208dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="168dp"
+        android:background="#6A1D86ED"
+        android:text=":) Afiyet Olsun :)"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cash_button"
+        android:layout_width="151dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/cash"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        app:backgroundTint="#BF1D86ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/credit_card_button"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/final_payment_amount"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <Button
+        android:id="@+id/credit_card_button"
+        android:layout_width="151dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/credit_card"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:backgroundTint="#BF1D86ED"
+        app:iconTint="#BF1D86ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/final_payment_amount"
+        app:layout_constraintVertical_bias="0.191" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

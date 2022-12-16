@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan1"
+    tools:context=".KuryeEkranFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/kresultorderrv"
+        android:layout_width="wrap_content"
+        android:layout_height="341dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/product_item" />
+
+
+    <TextView
+        android:id="@+id/kwaiterusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Deneme İsim"
+        android:textColor="@color/creamColor"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kresultorderrv" />
+
+    <TextView
+        android:id="@+id/ktextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_that_will_pay"
+        android:textColor="@color/creamColor"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kwaiterusername"
+        app:layout_constraintVertical_bias="0.118" />
+    <TextView
+        android:id="@+id/kadres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textColor="@color/creamColor"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ktextView3"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/ktelefon"
+        android:layout_width="80dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/telefon"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kadres" />
+
+    <TextView
+        android:id="@+id/kprice_will_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 TL"
+        android:textColor="@color/creamColor"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ktelefon"
+        app:layout_constraintVertical_bias="0.342" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
